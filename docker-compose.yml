@@ -1,0 +1,9 @@
+version: '2'
+services:
+  swagger_ui:
+    image: apremalal/swagger-ui:0.1
+    restart: always
+    volumes:
+      - ./swagger:/app/swagger
+    ports:
+      - 89:80

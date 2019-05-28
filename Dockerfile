@@ -2,8 +2,8 @@ FROM node:alpine
 MAINTAINER Anuruddha Premalal "anuruddhapremalal@gmail.com"
 
 # Set version when swagger-ui is updated
-ENV VERSION "v3.17.0"
-ENV FOLDER "swagger-ui-3.17.0"
+ENV VERSION "v3.22.2"
+ENV FOLDER "swagger-ui-3.22.2"
 ENV API_URL "http://petstore.swagger.io/v2/swagger.json"
 ENV API_KEY "**None**"
 ENV OAUTH_CLIENT_ID "**None**"

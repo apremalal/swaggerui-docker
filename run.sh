@@ -28,11 +28,11 @@ if [ "$OAUTH_ADDITIONAL_PARAMS" != "**None**" ]; then
 fi
 
 if [[ -f $SWAGGER_YML ]]; then
-  sed -i "s|http://petstore.swagger.io/v2/swagger.json|swagger/swagger.yml|g" index.html
-  sed -i "s|http://example.com/api|swagger/swagger.yml|g" index.html
+  sed -i "s|https://petstore.swagger.io/v2/swagger.json|swagger/swagger.yml|g" index.html
+  sed -i "s|https://example.com/api|swagger/swagger.yml|g" index.html
 else
-  sed -i "s|http://petstore.swagger.io/v2/swagger/swagger.yml|$API_URL|g" index.html
-  sed -i "s|http://example.com/api|$API_URL|g" index.html
+  sed -i "s|https://petstore.swagger.io/v2/swagger/swagger.yml|$API_URL|g" index.html
+  sed -i "s|https://example.com/api|$API_URL|g" index.html
 fi
 
 exec http-server -p $PORT $*

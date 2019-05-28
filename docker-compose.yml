@@ -1,7 +1,7 @@
 version: '2'
 services:
   swagger_ui:
-    image: apremalal/swagger-ui:0.1
+    image: apremalal/swagger-ui:0.2
     restart: always
     volumes:
       - ./swagger:/app/swagger
